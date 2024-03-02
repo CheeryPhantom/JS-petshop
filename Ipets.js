@@ -35,8 +35,8 @@ window.onload = function() {
         const adoptButton = document.createElement('button');
         adoptButton.textContent = 'Adopt';
         adoptButton.addEventListener('click', async () => {
-          await adoptPet(pet);
-          removePetFromTable(pet);
+          await adoptPet(pet[0]);
+          removePetFromTable(pet[0]);
         });
         adoptCell.appendChild(adoptButton);
         tableRow.appendChild(adoptCell);
